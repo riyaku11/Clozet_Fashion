@@ -5,9 +5,6 @@ const connectDatabase=  ()=>{
         console.log("connected to mongodb successfully !");
         console.log(`mongodb connected with server : ${data.connection.host}`);
         // console.log(process.env.DB_URI);
-    }).catch((err)=>{
-        console.log("oops theres an error");
-    console.log(err);
     })
     
 } 
