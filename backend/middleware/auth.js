@@ -28,10 +28,10 @@ exports.authorizeRoles = catchAsyncErrors( async (req,res,next)=>{
 //    console.log(decodedData); 
    req.user = await User.findById(decodedData.id);
    console.log(req.user)
-   console.log(req.user.roles)
-   const role = req.user.roles;
+   console.log(req.user.role)
+   const role = req.user.role;
    if(role !=="admin"){
-    return next(new ErrorHandler(`Role : ${req.user.roles} Access denied`,401))
+    return next(new ErrorHandler(`Role : ${req.user.role} Access denied`,401))
 }
     next();
 });

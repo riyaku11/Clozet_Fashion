@@ -42,11 +42,12 @@ const userSchema = new mongoose.Schema({
         type:imageSchema,
         required:true
     },
-    roles:{
-        type:String,
+    role:{
+        type: String,
+        required:[true,"please enter your role"],       
+        minLength:[3, "role should be greater than 8 characters"],
         default:"user"
     },
-    
     resetPasswordToken:String,
     resetPasswordExpire: Date,
 });
