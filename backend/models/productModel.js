@@ -15,7 +15,7 @@ const reviewSchema = new mongoose.Schema({
         required:true
 
     },
-    comments:{
+    comment:{
         type:String,
         required:true
 
@@ -76,9 +76,9 @@ const productSchema = new mongoose.Schema({
         type:Number,
         default:0
     },
-    reviews:{
-        type:reviewSchema,
-    },
+    reviews:[
+        { type:reviewSchema}
+    ],
     user:{
         type: mongoose.Schema.ObjectId,
         ref: "User",
