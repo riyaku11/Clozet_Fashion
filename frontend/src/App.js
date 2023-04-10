@@ -1,10 +1,11 @@
-import './App.css';
-import Header from "./component/layout/Header.js"
-
-
+import Footer from "./component/Footer/Footer";
+import Navbar from "./component/Navbar/Navbar";
 function App() {
   return (
-    <Header/>
+  <>
+  <Navbar/>
+   <Footer/>
+  </>
   );
 }
 
