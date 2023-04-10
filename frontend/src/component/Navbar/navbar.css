@@ -1,0 +1,92 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 100px;
+    padding: 0 20px;
+  }
+  
+  .navbar-logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo img {
+    max-height: 95%;
+    max-width: 85%;
+    object-fit: contain;
+  }
+  
+  .navbar-links {
+    font-family: 'Playfair Display', serif;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+  }
+  
+  .navbar-link {
+    margin-right: 40px;
+    font-size: 23px;
+    color: rgba(0, 0, 0, 0.719);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .navbar-link:hover {
+    color: blue;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  .search-input {
+    border: 2px solid;
+    border-color: #c9bfbfa4;
+    font-size: 18px;
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .search-icon {
+    color: #808080;
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 1px;
+    margin: 10px;
+  }
+  
+  .cart-icon {
+    color: #808080;
+    margin-right: 20px;
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 1px;
+    margin: 10px;
+
+  }
+  
+  .login-icon {
+    color: #808080;
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 1px;
+    margin: 10px;
+
+  }
