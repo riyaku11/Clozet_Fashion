@@ -1,13 +1,13 @@
 import React from "react"
-import logo from "../../components/assets/images/logo.svg"
+import logo from "../../components/assets/images/logo_removebg.png"
 import { Link } from "react-router-dom"
 
 const Search = ({ CartItem }) => {
-  // fixed Header
   window.addEventListener("scroll", function () {
     const search = document.querySelector(".search")
     search.classList.toggle("active", window.scrollY > 100)
   })
+
 
   return (
     <>
@@ -24,7 +24,7 @@ const Search = ({ CartItem }) => {
           </div>
 
           <div className='icon f_flex width'>
-            <i className='fa fa-user icon-circle'></i>
+            <Link to='/login'><i className='fa fa-user icon-circle' /></Link>
             <div className='cart'>
               <Link to='/cart'>
                 <i className='fa fa-shopping-bag icon-circle'></i>
